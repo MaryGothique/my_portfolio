@@ -18,7 +18,7 @@ body, h1, h2, p, ul, li {
                 0 0 80px #9933ff,
                 0 0 90px #9933ff,
                 0 0 100px #9933ff;
-
+    margin: 20px;
 }
 h2{
   margin: revert;
@@ -53,6 +53,8 @@ p{
   body {
     font-family: 'Arial', sans-serif;
     background-color: black;
+    margin: 10px;
+    padding: 10px;
   }
   
   /* Navbar styles */
@@ -87,6 +89,7 @@ p{
   
   /* Projects Section styles */
   #projects {
+    margin: 20px;
     padding: 20px;
   }
   
