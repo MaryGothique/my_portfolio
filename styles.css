@@ -109,10 +109,12 @@ p{
     display: block;
     margin-top: 20px;
     text-align: center;
-    color: #333;
+    color: #ffffff;
     height: 100%;
   }
-  
+  footer{
+    margin: 25px;
+  }
   /* Media Query for smaller screens */
   @media screen and (max-width: 600px) {
     /* Adjust styles for smaller screens here */
