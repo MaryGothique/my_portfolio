@@ -20,6 +20,22 @@ body, h1, h2, p, ul, li {
                 0 0 100px #9933ff;
 
 }
+h2{
+  margin: revert;
+  text-align: center;
+    color:#ffffff;
+    text-shadow:0 0 10px #4c1d7a,
+                0 0 20px #9933ff,
+                0 0 30px #9933ff,
+                0 0 40px #9933ff, 
+                0 0 50px #9933ff,
+                0 0 60px #9933ff,
+                0 0 70px #9933ff,
+                0 0 80px #9933ff,
+                0 0 90px #9933ff,
+                0 0 100px #9933ff;
+}
+
 p{
   color: aliceblue;
   text-shadow:0 0 10px #ffffff,
@@ -81,7 +97,7 @@ p{
   }
   
   .project-link {
-    display: inline-block;
+    display: inline;
     background-color: #333;
     color: white;
     padding: 5px 10px;
