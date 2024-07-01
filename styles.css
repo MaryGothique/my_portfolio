@@ -20,6 +20,7 @@ h1, h2 {
                0 0 90px #9933ff,
                0 0 100px #9933ff;
   margin: 20px;
+  padding: 30px;
 }
 
 p {
@@ -54,8 +55,6 @@ a:active {
 body {
   font-family: 'Arial', sans-serif;
   background-color: black;
-  margin: 10px;
-  padding: 10px;
 }
 
 #navbar {
@@ -64,12 +63,14 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
+  margin: auto -10px;
 }
 
 #navbar ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
+  
 }
 
 #navbar a {
