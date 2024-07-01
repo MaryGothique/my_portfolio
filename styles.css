@@ -1,136 +1,132 @@
 /* Reset some default styles */
 body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-  }
-  h1{
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
-    color:#ffffff;
-    text-shadow:0 0 10px #4c1d7a,
-                0 0 20px #9933ff,
-                0 0 30px #9933ff,
-                0 0 40px #9933ff, 
-                0 0 50px #9933ff,
-                0 0 60px #9933ff,
-                0 0 70px #9933ff,
-                0 0 80px #9933ff,
-                0 0 90px #9933ff,
-                0 0 100px #9933ff;
-    margin: 20px;
-}
-h2{
-  margin: revert;
-  text-align: center;
-    color:#ffffff;
-    text-shadow:0 0 10px #4c1d7a,
-                0 0 20px #9933ff,
-                0 0 30px #9933ff,
-                0 0 40px #9933ff, 
-                0 0 50px #9933ff,
-                0 0 60px #9933ff,
-                0 0 70px #9933ff,
-                0 0 80px #9933ff,
-                0 0 90px #9933ff,
-                0 0 100px #9933ff;
+  margin: 0;
+  padding: 0;
+  background-color: black;
 }
 
-p{
-  color: aliceblue;
-  text-shadow:0 0 10px #ffffff,
-  0 0 20px #9933ff,
-  0 0 30px #9933ff,
-  0 0 40px #9933ff, 
-  0 0 50px #9933ff,
-  0 0 60px #9933ff,
-  0 0 70px #9933ff,
-  0 0 80px #9933ff,
-  0 0 90px #9933ff,
-  0 0 100px #9933ff;
+h1, h2 {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 0 10px #4c1d7a,
+               0 0 20px #9933ff,
+               0 0 30px #9933ff,
+               0 0 40px #9933ff, 
+               0 0 50px #9933ff,
+               0 0 60px #9933ff,
+               0 0 70px #9933ff,
+               0 0 80px #9933ff,
+               0 0 90px #9933ff,
+               0 0 100px #9933ff;
+  margin: 20px;
 }
-  /* Apply a basic style to the body */
+
+p {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+}
+
+a:link {
+  color: #ffffff;
+}
+
+a:visited {
+  color: #9933ff;
+}
+
+a:hover {
+  color: #ff33ff;
+}
+
+a:active {
+  color: #ff99ff;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: black;
+  margin: 10px;
+  padding: 10px;
+}
+
+#navbar {
+  background-color: #333;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+
+#projects {
+  margin: 20px;
+  padding: 20px;
+}
+
+.project-tile {
+  border: 1px solid #ccc;
+  padding: 50px;
+  margin-bottom: 20px;
+}
+
+.project-link {
+  display: inline;
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+#profile-link {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: #ffffff;
+  height: 100%;
+}
+
+footer {
+  margin: 25px;
+}
+
+@media screen and (max-width: 600px) {
   body {
-    font-family: 'Arial', sans-serif;
-    background-color: black;
-    margin: 10px;
-    padding: 10px;
-  }
-  
-  /* Navbar styles */
-  #navbar {
-    background-color: #333;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-  }
-  
-  #navbar ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  #navbar a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  /* Welcome Section styles */
-  #welcome-section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000000;
-    
-  }
-  
-  /* Projects Section styles */
-  #projects {
-    margin: 20px;
-    padding: 20px;
-  }
-  
-  .project-tile {
-    border: 1px solid #ccc;
-    padding: 50px;
-    margin-bottom: 20px;
-  }
-  
-  .project-link {
-    display: inline;
-    background-color: #333;
-    color: white;
-    padding: 5px 10px;
-    text-decoration: none;
-  }
-  
-  /* Profile Link styles */
-  #profile-link {
-    display: block;
-    margin-top: 20px;
-    text-align: center;
-    color: #ffffff;
-    height: 100%;
-  }
-  footer{
-    margin: 25px;
-  }
-  /* Media Query for smaller screens */
-  @media screen and (max-width: 600px) {
-    /* Adjust styles for smaller screens here */
-    body {
       font-size: 14px;
-    }
-  
-    #navbar ul {
+  }
+
+  #navbar ul {
       flex-direction: column;
       align-items: center;
-    }
-  
-    #navbar li {
-      margin-bottom: 10px;
-    }
   }
+
+  #navbar li {
+      margin-bottom: 10px;
+  }
+}
