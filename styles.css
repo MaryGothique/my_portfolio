@@ -79,7 +79,7 @@ body {
 }
 
 #welcome-section {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,10 +112,42 @@ body {
   color: #ffffff;
   height: 100%;
 }
-
-footer {
-  margin: 25px;
+img{
+  margin: 20px;
+  width: 90px;
+  justify-items: center;
+   
 }
+.position{
+  justify-content: end;
+  justify-items: center;
+  text-align: center;
+}
+.lien:hover{
+  justify-content: center;
+  border: 1px solid #4c1d7a;
+  box-shadow: 0 0 10px #4c1d7a,
+  0 0 20px #9933ff,
+  0 0 30px #9933ff,
+  0 0 40px #9933ff;
+  width: 10%;
+}
+.shadow{
+  text-shadow: 0 0 10px #4c1d7a,
+  0 0 20px #9933ff,
+  0 0 30px #9933ff,
+  0 0 40px #9933ff;
+}
+.comp{
+  justify-content: center; 
+
+}
+.centre{
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px; 
+}
+
 
 @media screen and (max-width: 600px) {
   body {
