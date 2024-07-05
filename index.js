@@ -1,44 +1,59 @@
-import TypeIt from "typeit";
-
-document.addEventListener("DOMContentLoaded", function() {
-  console.log("DOM fully loaded and parsed");
-
-  const navWelcome = document.querySelector("#nav-welcome");
-  const navProjects = document.querySelector("#nav-projects");
-  const navProfile = document.querySelector("#nav-profile");
-  const navReseauxSociaux = document.querySelector("#nav-reseaux-sociaux");
-
-  console.log(navWelcome, navProjects, navProfile, navReseauxSociaux);
-
-  if (navWelcome) {
-    new TypeIt("#nav-welcome", {
-      strings: "Welcome",
-      speed: 50,
-      waitUntilVisible: true,
-    }).go();
-  }
-
-  if (navProjects) {
-    new TypeIt("#nav-projects", {
-      strings: "Projects",
-      speed: 50,
-      waitUntilVisible: true,
-    }).go();
-  }
-
-  if (navProfile) {
-    new TypeIt("#nav-profile", {
-      strings: "Profile",
-      speed: 50,
-      waitUntilVisible: true,
-    }).go();
-  }
-
-  if (navReseauxSociaux) {
-    new TypeIt("#nav-reseaux-sociaux", {
-      strings: "Réseaux Sociaux",
-      speed: 50,
-      waitUntilVisible: true,
-    }).go();
-  }
-});
+new TypeIt("#welcome", { 
+  lifeLike: false, 
+  speed: 0 
+})
+.delete(24, {instant: true})
+.type("W")
+.pause(350)
+.type("e")
+.pause(520)
+.type("l")
+.pause(269)
+.type("o")
+.pause(543)
+.delete(1)
+.pause(114)
+.type("c")
+.pause(100)
+.type("o")
+.pause(265)
+.type("m")
+.pause(49)
+.type("e")
+.pause(139)
+.type(" ")
+.pause(209)
+.type("t")
+.pause(90)
+.type("o")
+.pause(110)
+.type(" ")
+.pause(308)
+.type("m")
+.pause(222)
+.type("y")
+.pause(194)
+.type(" ")
+.pause(254)
+.type("p")
+.pause(128)
+.type("o")
+.pause(65)
+.type("r")
+.pause(105)
+.type("t")
+.pause(250)
+.type("f")
+.pause(96)
+.type("o")
+.pause(235)
+.type("l")
+.pause(140)
+.type("i")
+.pause(105)
+.type("o")
+.pause(119)
+.type(" ")
+.pause(5496)
+.break()
+.go();
